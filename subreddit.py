@@ -1,5 +1,6 @@
 #Select the subreddit
-subreddit = 'blank'
+def user_subreddit(input):
+    link = 'https://oauth.reddit.com/' + input + '/hot'
 
 
 

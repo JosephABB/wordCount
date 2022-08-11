@@ -1,5 +1,5 @@
 #Authentication module for reddit API
-def authenticate (CLIENT_ID, SECRET_KEY_FILE):
+def authenticate (CLIENT_ID, SECRET_KEY_FILE, SUBREDDIT):
     import requests
 
    #CLIENT_ID = 'WjBdU3M9ao2qn8P1SZ6EmQ'
@@ -26,7 +26,7 @@ def authenticate (CLIENT_ID, SECRET_KEY_FILE):
 
     headers['Authorization'] = f'bearer {TOKEN}'
 
-    res = requests.get('https://oauth.reddit.com/r/news/hot',
+    res = requests.get('https://oauth.reddit.com/' + SUBREDDIT + '/hot',
                     headers=headers, params={'limit': '100'})
 
     print('connected')
