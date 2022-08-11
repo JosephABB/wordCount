@@ -1,3 +1,2 @@
-WordCount is an application used to visualize 
-the most frequently used words within any subreddit by
-using Reddit's API. 
+WordCount is an application that uses Reddit's API to visualize
+the most frequently used words of any given subreddit.
