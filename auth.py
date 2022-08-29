@@ -29,5 +29,4 @@ def authenticate (CLIENT_ID, SECRET_KEY_FILE, SUBREDDIT):
     res = requests.get('https://oauth.reddit.com/' + SUBREDDIT + '/hot',
                     headers=headers, params={'limit': '100'})
     return res.json()['data']['children']
-    #['children']
 
