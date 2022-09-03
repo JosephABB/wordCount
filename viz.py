@@ -1,5 +1,6 @@
 #create visualization depending on the lexical category chosen
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
 import pandas
 
 def find_lex (lex_cat, words_df):

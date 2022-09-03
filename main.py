@@ -5,7 +5,13 @@ from viz import find_lex
 from viz import vizualize
 
 reddit_in = input('Enter subreddit in following format "r/news": ')
-lex_in = input('Enter a lexical category abbreviation in all caps: ')
+lex_in = input('Enter a lexical category abbreviation in all caps (For options enter ?): ')
+
+if lex_in == '?':
+    print("\nJJ (ordinal adjective or numeral), JJR (comparitive adjective), JJS (superlative adjective), NN (common noun),"
+          " NNP (proper singular noun), NNS (common plural noun), \nVB (base form verb), VBD (past tense verb),"
+          " VBG (present participle or gerund verb), VBN (past particle verb), VBP (present tense verb), \nVBZ (3rd person singular present tense verb)\n")
+    lex_in = input('Enter a lexical category abbreviation in all caps: ')
 
 
 raw_data = authenticate('WjBdU3M9ao2qn8P1SZ6EmQ', 'C:/Users/josep/wordCount/secretKey.txt', reddit_in)
